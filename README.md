@@ -1,2 +1,2 @@
 # cheap-ai-image-generator
-State of art image generators used to be expensive to operate due to the expensive resources needed. This is a cheap version.
+State of the art image generators are usually expensive to run due to expensive resource requirements. This is a cheap version.
