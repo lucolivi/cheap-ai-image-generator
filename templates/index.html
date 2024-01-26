@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Semantic Image Search</title>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        main {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Semantic Image Search</h1>
+		<form method="get">
+			<input type="text" placeholder="Search..." name="query">
+			<button type="submit">Search</button>
+		</form>
+	</header>
+	
+    <br>
+
+	<main>
+		<div class="grid-container">
+
+            {% for desc, url in img_urls %}
+			<div class="grid-item" style="display: inline-block" style="margin: 5px;">
+                <img width="400px" src="{{ url }}" title="{{desc}}"><br>
+			    
+			</div>
+            
+            {% endfor %}
+
+		</div>
+	</main>
+	
+	<footer>
+		<p>&copy; 2024 Semantic Image Search</p>
+	</footer>
+</body>
+</html>
